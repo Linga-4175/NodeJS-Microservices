@@ -1,10 +1,9 @@
-
 services:
-  api-gatway:
-    build: ./api-gatway
+  api-getway:
+    build: ./api-getway
     ports:
       - "3000:3000"
-    env_file: ./api-gatway/.env
+    env_file: ./api-getway/.env
     depends_on:
       - redis
       - rabbitmq
