@@ -11,9 +11,9 @@ services:
       - REDIS_URL=redis://redis:6379
       - RABBITMQ_URL=amqp://rabbitmq:5672
 
-  identity-service:
-    build: ./identity-service
-    env_file: ./identity-service/.env
+  identity-services:
+    build: ./identity-services
+    env_file: ./identity-services/.env
     depends_on:
       - redis
       - rabbitmq
